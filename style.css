@@ -9,6 +9,16 @@
     height: 100vh;
 }
 
+@keyframes fadein {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@keyframes fadein2 {
+	0% {font-size: 30px}
+	100% {font-size: h1}
+}
+
 header {
     height: 100px;
     display: flex;
@@ -40,6 +50,7 @@ header {
     color: white;
     transition: 0.5s;
     font-family: 'Ubuntu', sans-serif;
+    animation: fadein2 2s forwards;
 }
 
 
@@ -67,6 +78,7 @@ header {
     margin-left: 20px;
     margin-top: 20px;
     display: flex;
+    animation: fadein 1s forwards;
     transition: 0.5s
 }
 
@@ -97,6 +109,11 @@ header {
 .content ul a {
     text-decoration: none;
     color: rgb(61, 55, 138);
+}
+
+.content ul a:hover{
+    transition: 1.0s;
+    text-decoration: underline;
 }
 
 .table {
@@ -163,8 +180,13 @@ header {
     margin-bottom: 20px;
 }
 
+.content-page ul a{
+    color: rgb(125, 91, 50);
+}
+
 .content-page ul li{
     margin-left: 20px;
+    list-style: square;
 }
 
 
