@@ -1,10 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-@media screen and (min-width:751px) {
+@media screen and (max-width:750px) {
 .main {
     width: 100vw;
     height: 100vh;
@@ -21,9 +16,8 @@
 }
 
 header {
-    height: 100px;
+    height: 110px;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(to right, rgb(69, 69, 69), rgb(28, 28, 28));
@@ -33,7 +27,7 @@ header {
 
 .logo {
     margin-left: 20px;
-    width: 80px;
+    width: 60px;
     border-radius: 50%;
 }
 
@@ -43,13 +37,16 @@ header {
 }
 
 .logoarea {
+    margin-top: 5px;
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .logoarea h1 {
     margin-left: 20px;
     color: white;
+    font-size: 30px;
     transition: 0.5s;
     font-family: 'Ubuntu', sans-serif;
     animation: fadein2 2s forwards;
@@ -58,6 +55,10 @@ header {
 
 .menu ul{
     display: flex;
+    border-top: 0.5px solid;
+    border-color:white;
+    padding-top: 8px;
+    justify-content: center;
 }
 
 .menu ul li{
@@ -77,18 +78,23 @@ header {
 }
 
 .Home {
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
     display: flex;
     animation: fadein 1s forwards;
     transition: 0.5s
 }
 
 .side{
-    width: 150px;
+    width: 100px;
     height: 100vh;
     border-right: 0.5px dashed;
     position: sticky;
+}
+
+.side h3 {
+    width: 100px;
+    font-size: 15px;
 }
 
 .content {
@@ -97,7 +103,6 @@ header {
 }
 
 .content ul {
-    display: flex;
     text-align: center;
 }
 
@@ -119,15 +124,16 @@ header {
 }
 
 .table {
-    margin-top: 20px;
-    padding: 2.0rem;
+    margin-top: 10px;
+    padding: 1.0rem;
+    justify-content: center;
 }
 
 .table img {
     border-radius: 50%;
     border: 0.2px solid;
-    width: 150px;
-    margin-bottom: 10px;
+    width: 100px;
+    margin-bottom: 10px; 
 }
 
 .table img:hover {
