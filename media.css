@@ -17,16 +17,15 @@
 
 header {
     height: 110px;
-    width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: linear-gradient(to right, rgb(69, 69, 69), rgb(28, 28, 28));
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
 }
 
 .logo {
-    margin-left: 20px;
+    margin-left: 10px;
     width: 60px;
     border-radius: 50%;
 }
@@ -38,13 +37,14 @@ header {
 
 .logoarea {
     margin-top: 5px;
+    justify-content: center;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
 }
 
 .logoarea h1 {
-    margin-left: 20px;
+    margin-left: 10px;
     color: white;
     font-size: 30px;
     transition: 0.5s;
