@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+button {
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
 @media screen and (min-width:751px) {
     .main {
         width: 100vw;
@@ -31,12 +37,6 @@
     .header {
         height: 92px;
         transition: 0.3s;
-    }
-
-    button {
-        border-color: transparent;
-        background: transparent;
-        cursor: pointer;
     }
 
     .left {

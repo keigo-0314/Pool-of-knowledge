@@ -23,10 +23,23 @@
         overflow: hidden;
     }
     
-    header {
-        height: 120px;
-
+    .header {
+        height: 92px;
+        transition: 0.3s;
     }
+
+    .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger_bar {
+        display: none;
+      }
+      
+      .hamburger_bar:nth-child(3) {
+        margin-top: 8px;
+      }
 
     .logo {
         width: 50px;
@@ -42,7 +55,7 @@
         margin-left: 5px;
         margin-top: 5px;
         margin-bottom: 5px;
-        justify-content: left;
+        justify-content: space-between;
         display: flex;
         align-items: center;
     }
