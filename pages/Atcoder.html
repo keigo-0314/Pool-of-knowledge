@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <title>Pool of Atcoder</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../media.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
     <link rel="shortcut icon" href="../images/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,19 @@
 </head>
 <body>
     <div class="main">
-        <header>
+        <header id="header" class="header">
             <div class="logoarea"> 
-                <img src="../images/atcoder.png" class="logo">
-                <h1>Pool of Atcoder</h1>
+                <div class="left">
+                    <img src="../images/atcoder.png" class="logo">
+                    <h1>Pool of Atcoder</h1>
+                </div>
+                <button id="hamburger">
+                    <span class="hamburger_bar"></span>
+                    <span class="hamburger_bar"></span>
+                    <span class="hamburger_bar"></span>
+                  </button>
             </div>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <ul>
                     <a href="../index.html"><li>Home</li></a>
                     <a href="./Web.html"><li>Web</li></a>
@@ -37,6 +44,7 @@
                 <ul>
                     <a href=""><li>My Page</li></a>
                     <a href=""><li>C++</li></a>
+                    <a href=""><li>Chrome Extensions</li></a>
                 </ul>
             </div>
             <div class="content-page">
@@ -50,6 +58,7 @@
                     <a href="http://vivi.dyndns.org/tech/cpp/map.html" target="_blank"><li>Map型</li></a>
                     <a href="http://vivi.dyndns.org/tech/cpp/set.html" target="_blank"><li>Set型</li></a>
                     <a href="https://cpprefjp.github.io/reference/utility/pair.html" target="_blank"><li>pair型</li></a>
+                    <a href="https://qiita.com/drken/items/a5e6fe22863b7992efdb" target="_blank"><li>動的計画法</li></a>
                 </ul>
                 <h3>Chrome Extensions</h3>
                 <ul>
@@ -60,5 +69,6 @@
             </div>
         </div>
     </div>  
+    <script src="../scripts/burger.js"></script> 
 </body>
 </html>

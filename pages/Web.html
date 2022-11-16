@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <title>Pool of knowledge</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../media.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
     <link rel="shortcut icon" href="../images/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,19 @@
 </head>
 <body>
     <div class="main">
-        <header>
+        <header id="header" class="header">
             <div class="logoarea"> 
-                <img src="../images/htmllogo.png" class="logo">
-                <h1>Pool of Web</h1>
+                <div class="left">
+                    <img src="../images/htmllogo.png" class="logo">
+                    <h1>Pool of Web</h1>
+                </div>
+                <button id="hamburger">
+                    <span class="hamburger_bar"></span>
+                    <span class="hamburger_bar"></span>
+                    <span class="hamburger_bar"></span>
+                  </button>
             </div>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <ul>
                     <a href="../index.html"><li>Home</li></a>
                     <a href="./Atcoder.html"><li>Atcoder</li></a>
@@ -51,6 +58,7 @@
                 </ul>
                 <h3>Git</h3>
                 <ul>
+                    <a href="https://qiita.com/fukumone/items/73e1a9a62c5e4454263b" target="_blank"><li>Gitコマンド一覧</li></a>
                     <a href="https://qiita.com/shuntaro_tamura/items/06281261d893acf049ed" target="_blank"><li>Commit 打ち消し</li></a>
                 </ul>
                 <h3>HTML</h3>
@@ -61,5 +69,6 @@
             </div>
         </div>
     </div>  
+    <script src="../scripts/burger.js"></script> 
 </body>
 </html>
